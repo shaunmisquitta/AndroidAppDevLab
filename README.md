@@ -1,19 +1,20 @@
-# Android App Development Lab
+#### Android App Development Lab
 
-## Project Title : Bh WhatsApp Community Analyzer 
+# Project Title : Bh WhatsApp Community Analyzer 
 
-# Members:  Shaun Misquitta 42
-#           Sanika Bhagwat 03
-#           Tanmay Joshi 27
+### Members:  
+Shaun Misquitta 42  
+Sanika Bhagwat 03  
+Tanmay Joshi 27   
 
 
-# Teach Stack 
+## Tech Stack 
 
-FrontEnd - React Native
+FrontEnd - React Native     
 Backend - Nodejs, Express,Mongodb , JWT (Authentication)
 
-# FrontEnd Code Snippet for Login Screen
-
+## Frontend Code Snippet for Login Screen
+```
 render(){
         return(
             <View style={styles.body}>
@@ -47,10 +48,11 @@ render(){
         )
     }}
 
+```
 
+## Backend Code Snippet for Logging in Users
 
-# Backend Code Snippet for Logging in Users
-
+```
 router.post("/login",async(req,res) => {
 
     const userdata = {
@@ -75,3 +77,4 @@ router.post("/login",async(req,res) => {
     })
     .catch(err => res.json(err))
 })
+```
